@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WARNING</title>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            padding: 0;
+            font-family: 'Courier New', Courier, monospace;
+            background-color: #000;
+            color: #0f0;
+            overflow: hidden;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+        }
+       .cursor {
+            animation: blink 1s step-end 0s infinite;
+        }
+        @keyframes blink {
+            50% { opacity: 0; }
+        }
+       .console-text {
+            font-size: 4vw;
+            margin-bottom: 1vw;
+        }
+        @media (max-width: 600px) {
+          .console-text {
+                font-size: 6vw;
+            }
+        }
+
+        /* 新增进度条样式 */
+      .progress {
+            width: 80%;
+            height: 20px;
+            background-color: #111;
+            border-radius: 10px;
+            overflow: hidden;
+            margin-top: 20px;
+        }
+      .progress-bar {
+            height: 100%;
+            background-color: #0f0;
+            width: 0%;
+            transition: width 0.5s ease;
+        }
+    </style>
+</head>
+<body>
+
+    <div>
+        <span class="cursor"></span>
+        <div class="console-text" id="consoleOutput">
+            > 系统启动中...
+        </div>
+        <div class="progress">
+            <div class="progress-bar" id="progressBar"></div>
+        </div>
+    </div>
+
+    <script>
+        function simulateConsole() {
+            const consoleOutput = document.getElementById('consoleOutput');
+            const textArray = [
+                '> 系统启动中...',
+                '> 正在连接到主服务器...',
+                '> 访问权限已验证...',
+                '> 执行中...',
+                '> 核心模块初始化...',
+                '> 加密协议建立中...',
+                '> 数据端口开启...',
+                '> 防火墙突破准备...',
+                '> 安全密钥正在生成...',
+                '> 系统漏洞扫描启动...',
+                '> 恶意代码注入中...',
+                '> 远程控制链接就绪...',
+                '> 隐藏进程激活...',
+                '> 数据包伪装完成...',
+                '> 加密隧道构建中...',
+                '> 目标系统锁定...',
+                '> 攻击指令发送中...'
+            ];
+
+            let index = 0;
+            let progress = 0;
+            setInterval(() => {
+                if (index < textArray.length - 1) {
+                    consoleOutput.textContent = textArray[index++];
+                    progress = (index / textArray.length) * 100;
+                    document.getElementById('progressBar').style.width = progress + '%';
+                } else {
+                    consoleOutput.textContent = textArray[index];
+                    setTimeout(() => {
+                        index = 0; 
+                        consoleOutput.textContent = textArray[index++];
+                        progress = 0;
+                        document.getElementById('progressBar').style.width = progress + '%';
+                    }, 5000); 
+                }
+            }, 2000); 
+        }
+
+        simulateConsole();
+    </script>
+
+</body>
+</html>
