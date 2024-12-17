@@ -1,0 +1,179 @@
+@charset "utf-8";
+/* CSS Document */
+body {
+			background-color: ;
+			height: 100vh;;
+			width: auto;
+			overflow: hidden;
+			max-width: 100%;
+            max-height: 100%;
+			margin: 0;
+			
+			
+		}
+		.tbody {
+			/*background-color: #EF3473;*/
+			background-image: linear-gradient(to right, rgba(255, 0, 0, 0.5), rgba(0, 0, 255, 0.5));
+			height: 93vh;
+		}   
+		.dibumenu {
+			background-color: ;
+			height: 7vh;
+			
+			
+			
+		}
+		.anniuk {
+			background-color: ;
+			height: 100%;
+			width: 100%;
+			margin-left:0;
+			margin-right: 0;
+			display: flex;
+			justify-content: space-between;
+			border: 1px solid #ccc;
+		}
+		.anniu {
+			background-color: ;
+			height: 100%;
+			width: 25%;
+			margin: 0;
+            text-align: center;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            border: 1px solid #ccc;
+			}
+.anniu:active {
+            background-color: #ee4866; /* 点击时改变背景颜色 */
+        }
+		.anniunei {
+			font-size:2.5vh;
+			
+		}
+		.top {
+			background-color: white;
+			height: 4vh;
+			border-bottom: 1px solid #ccc;
+			display: flex;
+			justify-content: space-between;
+		}
+		.toptext {
+			background-color: ;
+			height: 100%;
+			width: 25%;
+			margin: auto;
+            text-align: center;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+            
+		}
+		.langmuk{
+			background-color: beige;
+			height:89vh;
+		}
+		.langmu {
+			background-color: white;
+			height: 9vh;
+			border-bottom: 1px solid #ccc;
+			display: flex;
+		}
+		.lmzuo{
+			background-color: ;
+			width: 16vw;
+			display: flex;
+			
+			margin: auto;
+            text-align: center;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+				
+		}
+		.lmzhong {
+			height: 9vh;
+			background-color:;
+			width: 72vw;
+			padding: 4px;
+		}
+		.lmtext {
+			margin-top: 7px;
+			margin-left: 7px;
+			font-size: 2vh;
+			
+		}
+		.lmtext2 {
+			margin-top: 7px;
+			margin-left: 7px;
+			font-size: 1.5vh;
+			color:dimgray;
+		}
+		.lmyou {
+			background-color: ;
+			width: 12vw;
+			
+		}
+		.jstime {
+			height: 50%;
+			background-color: ;
+			display: flex;
+			
+		}
+		.jstimetext {
+			margin: auto;
+            text-align: center;
+			display: flex;
+            justify-content: center;
+            align-items: center;
+			font-size: 1.2vh;
+			color:dimgray;
+		}
+		.cmmenu {
+			background-color:;
+			height: 54vh;
+		}
+		.jgg {
+			background-color: ;
+			height: 18vh;
+			display: flex;
+		}
+		.gz {
+			/*background-color:rgba(255,255,255,0.5) ;*/
+			 background-image:radial-gradient(circle, rgba(255,255,255,1), rgba(255,255,255,0.3));
+			width: 33.33vw;
+			border: 1px solid #ccc;
+			display: flex;
+			 justify-content: center;
+            align-items: center;
+			border-radius: 20px;
+			
+			
+		}
+.gz:hover {
+            transform: scale(1.2); /* 鼠标悬停时放大 1.2 倍 */
+        }
+ .gz:active {
+            background-color: #ee4866; /* 点击时改变背景颜色 */
+        }
+    
+		.gztext {
+			text-align: center;
+			display: flex;
+            background-color: ;
+			font-size: 2.1vh;
+		}
+ .floating-window {
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 80vw;
+            height: 75vh;
+           background-image:radial-gradient(circle, rgba(255,255,255,0.8), rgba(255,255,255,0.8));
+            border: 1px solid #333;
+	 border-radius: 10px;
+        }
+.floating-window:active {
+	background-color: aquamarine;
+}
