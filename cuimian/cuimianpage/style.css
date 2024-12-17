@@ -1,0 +1,288 @@
+@charset "utf-8";
+/* CSS Document */
+
+body {
+			background-color:black;
+			height: 100vh;;
+			width: auto;
+			overflow: hidden;
+			max-width: 100%;
+            max-height: 100%;
+			margin:0;
+}
+
+.aa {
+	background-color: aqua;
+	height: 100vh;
+	width: 100vw;
+}
+.background-style-117 {
+    width: 100%;
+    height: 100%;
+    background:
+        radial-gradient(
+            circle at left,
+            transparent,
+            #99eb47,
+            #99eb47 3.36927%,
+            transparent 3.36927%,
+            transparent 6.73854%,
+            #b3e87d 6.73854%,
+            #b3e87d 10.10782%,
+            transparent 10.10782%,
+            transparent 13.47709%,
+            #ccebad 13.47709%,
+            #ccebad 16.84636%,
+            transparent 16.84636%,
+            transparent 20.21563%,
+            #a6ed5e 20.21563%,
+            #a6ed5e 23.58491%,
+            transparent 23.58491%,
+            transparent 26.95418%,
+            #ccebad 26.95418%,
+            #ccebad 30.32345%,
+            transparent 30.32345%,
+            transparent 33.69272%,
+            #b3e87d 33.69272%,
+            #b3e87d 37.06199%,
+            transparent 37.06199%,
+            transparent 40.43127%,
+            #99eb47 40.43127%,
+            #99eb47 43.80054%,
+            transparent 43.80054%,
+            transparent 47.16981%
+        ),
+        radial-gradient(
+            circle at right,
+            transparent,
+            #99eb47 0%,
+            #99eb47 3.36927%,
+            transparent 3.36927%,
+            transparent 6.73854%,
+            #b3e87d 6.73854%,
+            #b3e87d 10.10782%,
+            transparent 10.10782%,
+            transparent 13.47709%,
+            #ccebad 13.47709%,
+            #ccebad 16.84636%,
+            transparent 16.84636%,
+            transparent 20.21563%,
+            #a6ed5e 20.21563%,
+            #a6ed5e 23.58491%,
+            transparent 23.58491%,
+            transparent 26.95418%,
+            #ccebad 26.95418%,
+            #ccebad 30.32345%,
+            transparent 30.32345%,
+            transparent 33.69272%,
+            #b3e87d 33.69272%,
+            #b3e87d 37.06199%,
+            transparent 37.06199%,
+            transparent 40.43127%,
+            #99eb47 40.43127%,
+            #99eb47 43.80054%,
+            transparent 43.80054%,
+            transparent 47.16981%
+        ),
+        radial-gradient(circle at left,
+            transparent,
+            #99eb47 0%,
+            #99eb47 3.36927%,
+            transparent 3.36927%,
+            transparent 6.73854%,
+            #b3e87d 6.73854%,
+            #b3e87d 10.10782%,
+            transparent 10.10782%,
+            transparent 13.47709%,
+            #ccebad 13.47709%,
+            #ccebad 16.84636%,
+            transparent 16.84636%,
+            transparent 20.21563%,
+            #a6ed5e 20.21563%,
+            #a6ed5e 23.58491%,
+            transparent 23.58491%,
+            transparent 26.95418%,
+            #ccebad 26.95418%,
+            #ccebad 30.32345%,
+            transparent 30.32345%,
+            transparent 33.69272%,
+            #b3e87d 33.69272%,
+            #b3e87d 37.06199%,
+            transparent 37.06199%,
+            transparent 40.43127%,
+            #99eb47 40.43127%,
+            #99eb47 43.80054%,
+            transparent 43.80054%,
+            transparent 47.16981%
+        ),
+        radial-gradient(circle at right,
+            transparent,
+            #99eb47 0%,
+            #99eb47 3.36927%,
+            transparent 3.36927%,
+            transparent 6.73854%,
+            #b3e87d 6.73854%,
+            #b3e87d 10.10782%,
+            transparent 10.10782%,
+            transparent 13.47709%,
+            #ccebad 13.47709%,
+            #ccebad 16.84636%,
+            transparent 16.84636%,
+            transparent 20.21563%,
+            #a6ed5e 20.21563%,
+            #a6ed5e 23.58491%,
+            transparent 23.58491%,
+            transparent 26.95418%,
+            #ccebad 26.95418%,
+            #ccebad 30.32345%,
+            transparent 30.32345%,
+            transparent 33.69272%,
+            #b3e87d 33.69272%,
+            #b3e87d 37.06199%,
+            transparent 37.06199%,
+            transparent 40.43127%,
+            #99eb47 40.43127%,
+            #99eb47 43.80054%,
+            transparent 43.80054%,
+            transparent 47.16981%
+        ), #99e052;
+
+    background-size: 4em 4em;
+    background-position:
+            0 0,
+            0 2em,
+            2em 0,
+            2em 2em;
+    background-blend-mode:
+            overlay,
+            overlay,
+            normal,
+            normal;
+}
+.background-style-124 {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+       to right,
+       #bb313e25,
+       #bb313e25,
+       #d7222925,
+       #dd4a1625,
+       #e4761525,
+       #f5c50025,
+       #f0e92725,
+       #b1ce2425,
+       #48a93525,
+       #03944525,
+       #157c4f25,
+       #176a5825,
+       #1b556325,
+       #1d386f25,
+       #1d386f25,
+       #20277825,
+       #52266325,
+       #8a244b25
+  );
+}
+.animek {
+	width: 100vw;
+	height: 100vh;
+	background: rgba(30,83,157,1.00);
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	animation-name: hd2;
+	animation-duration: 2s;
+}
+@keyframes hd2{
+	25% {
+		transform: scale(0.5)
+	}
+	
+	100% {
+		transform: scale(1)
+	}
+}
+.anime {
+	width: 125px;
+	height: 125px;
+	background-color: rgba(255,255,255,1.00);
+	animation-name: hd;
+	animation-duration: 4s;
+	border-top-left-radius: 75px;
+	border-top-right-radius: 75px;
+	border-bottom-left-radius: 75px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+@keyframes hd {
+	0% {
+		
+		background-color: rgba(255,255,255,1.00);
+	}
+	25%{
+		transform: scale(2);
+		transform: rotate(-390deg);
+		
+	}
+	75%{
+		background-color: rgba(48,82,124,1.00);
+	
+	}
+	
+		
+}
+.anime1 {
+	width: 300px;
+	height: 300px;
+	border: solid 1px rgba(255,255,255,1.00);
+	animation-name: hd1;
+	animation-duration: 4s;
+	
+	
+}
+@keyframes hd1 {
+	0% {
+		
+	}
+	25%{
+		transform: translate(50px);
+		transform: scale(2);
+		transform: rotate(390deg);
+	}
+	100%{
+		transform: rotate(360deg);
+	}
+	
+}
+.wzi {
+	
+}
+.zxi {
+	width: 100%;
+	height: 15%;
+	
+}
+.zx {
+	width: 100%;
+	height: 70%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	
+}
+.eye {
+	float: left;
+	height: 50px;
+	width: 50px;
+	background-color: rgba(255,255,255,1.00);
+	border-bottom-right-radius: 10px;
+}
+.eye1 {
+	float: right;
+	height: 50px;
+	width: 50px;
+	background-color: rgba(255,255,255,1.00);
+	border-bottom-left-radius: 10px;
+}
