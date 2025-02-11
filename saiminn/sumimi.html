@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/main.js"></script>
+</head>
+<body>
+    <div class = "main-page" id = "main-page" >
+        <div id="partup">
+            <div class="part-normal" id="parta">
+                <div id="parta-kuan" >
+                    <!-- <button id="openButton">打开悬浮窗</button> -->
+                    <div id="saiminngnk">
+                        <div id="saiminnsj" class="switch">
+                            <div class="anniuk1">
+                                <div class="anniu1"></div>
+                            </div>
+                            <div class="wzikuan">saiminntime</div>
+                        </div>
+                        <div id="saiminnrs" class="switch">
+                            <div class="anniuk1">
+                                <div class="anniu1"></div>
+                            </div>
+                            <div class="wzikuan">saiminnX</div>
+                        </div>
+                        <div id="kssaiminn" class="switch">
+                            <div class="anniuk1">
+                                <div class="anniu1"></div>
+                            </div>
+                            <div class="wzikuan">saiminnStart</div>
+                        </div>
+                    </div>
+                </div>
+            </div> 
+            <div class="part-center" id="partb">
+                <div id="partb-left">
+                    <div id="floatingWindow" class="floating-window">
+                        <div class="floating-content">
+                            <h2>这是一个悬浮窗</h2>
+                            <p>这里是悬浮窗的内容。</p>
+                            <button id="closeButton">关闭</button>
+                        </div>
+                    </div>
+
+
+
+
+                </div>
+                    <div id="partb-center">
+                        
+                        <div id="saiminn-logo">这里是logo</div>
+                    </div>
+                <div id="partb-right"></div>        
+            </div>
+        </div>
+        <div class="part-normal" id="partc">
+            
+        </div> 
+    </div>
+</body>
+<script>
+    var centeronclick = document.getElementById('saiminn-logo')
+centeronclick.onclick = function() {
+    centeronclick.id = 'saiminn-logo-onclick';
+    var partcmenu = document.getElementById('partc')
+    partcmenu.innerHTML = `<div class="menus" id="menus1"></div>
+            <div  id="menus2">
+                <span id="menusleft"></span>
+                <span id="menu">
+                    <span class="botton" id="saiminn"><div style="pointer-events: none;">催眠</div></span>
+                    <span class="botton" id="shequ"><div style="pointer-events: none;">社区</div></span>
+                    <span class="botton" id="yonghu"><div style="pointer-events: none;">用户</div></span>
+                    <span class="botton" id="shezhi"><div style="pointer-events: none;">设置</div></span>
+                </span>
+                <span id="menusright"></span>
+            </div>
+            <div class="menus" id="menus3"></div>`
+     var saiminnonclick = document.getElementById('saiminn')
+        
+
+     function shurupkp(event) {
+        var pukepaiwaikuan = document.getElementById('partb-center')
+        pukepaiwaikuan.innerHTML = `<div class="pukepai" id="cuimianpukepai">
+                            <div class="menu-container">
+                                <ul class="menu">
+                                  <li><a href="#" id="element01">back</a></li>
+                                  <li><a href="#" id="element02">saiminn</a></li>
+                                  <li><a href="#" id="element03">睡眠知识</a></li>
+                                  <li><a href="#" id="element04">状态监控</a></li>
+                                  <li><a href="#" id="element05">外设管理</a></li>
+                                  <li><a href="#" id="element06">高级模式</a></li>
+                                  <li><a href="#" id="element07">脚本管理</a></li>
+                                  <li><a href="#" id="element08">资源管理</a></li>
+                                  <li><a href="#" id="element09">使用教程</a></li>
+                                  <li><a href="#" id="element10">更多功能</a></li>
+                                  <li><a href="#" id="element11">Home</a></li>
+                                  <li><a href="#" id="element12">About</a></li>
+                                  <li><a href="#" id="element13">Services</a></li>
+                                  <li><a href="#" id="element14">Portfolio</a></li>
+                                  <li><a href="#" id="element15">Contact</a></li>
+                                </ul>
+                              </div>
+            
+                        </div>
+                        `;
+
+        var fanhui = document.getElementById('element01')
+        fanhui.onclick = function() {
+            pukepaiwaikuan.innerHTML = ``; };
+
+
+        var fanhui2 = document.getElementById('element02')
+        fanhui2.onclick = function() {
+            var dongneikuan1 = document.getElementById('parta')
+            dongneikuan1.innerHTML = ``; };
+        }
+
+        
+        function handleClick(event) {
+            // 获取当前点击的元素
+            const clickedElement = event.target;
+
+            // 设置当前点击的元素的背景颜色
+            clickedElement.style.backgroundColor = 'rgb(116,116,116)';
+
+            // 遍历当前点击元素的所有子元素，确保子元素的背景颜色与父元素一致
+            const clickedChildren = clickedElement.children;
+            for (let i = 0; i < clickedChildren.length; i++) {
+                clickedChildren[i].style.backgroundColor = 'rgb(116,116,116)';
+            }
+
+            // 获取当前元素的所有同级元素
+            const siblingElements = clickedElement.parentElement.children;
+
+            // 遍历所有同级元素
+            for (let i = 0; i < siblingElements.length; i++) {
+                // 排除当前点击的元素
+                if (siblingElements[i] !== clickedElement) {
+                // 设置同级元素的背景颜色
+                siblingElements[i].style.backgroundColor = 'rgb(211,211,211)';
+
+                // 遍历同级元素的所有子元素，确保子元素的背景颜色与父元素一致
+                const siblingChildren = siblingElements[i].children;
+                for (let j = 0; j < siblingChildren.length; j++) {
+                    siblingChildren[j].style.backgroundColor = 'rgb(211,211,211)';
+                }
+                }
+            }
+            }
+
+
+    var saiminnonclick = document.getElementById('saiminn')
+    saiminnonclick.addEventListener('click', handleClick);
+    saiminnonclick.addEventListener('click', shurupkp);
+
+    var shequonclick = document.getElementById('shequ')
+     shequonclick.addEventListener('click', handleClick);
+        
+    var yonghuonclick = document.getElementById('yonghu')
+     yonghuonclick.addEventListener('click', handleClick);
+        
+    var shezhionclick = document.getElementById('shezhi')
+     shezhionclick.addEventListener('click', handleClick);
+        shezhionclick.style.backgroundColor = 'rgb(116,116,116)';
+
+    // 获取当前元素的所有同级元素
+
+            
+        }
+    
+    </script>
+<script>
+    // script.js
+document.addEventListener('DOMContentLoaded', function () {
+    // 获取元素
+    const openButton = document.getElementById('openButton');
+    const closeButton = document.getElementById('closeButton');
+    const floatingWindow = document.getElementById('floatingWindow');
+
+    // 打开悬浮窗
+    openButton.addEventListener('click', function () {
+        floatingWindow.style.display = 'block';
+    });
+
+    // 关闭悬浮窗
+    closeButton.addEventListener('click', function () {
+        floatingWindow.style.display = 'none';
+    });
+
+    // 点击悬浮窗外部关闭
+    window.addEventListener('click', function (event) {
+        if (event.target === floatingWindow) {
+            floatingWindow.style.display = 'none';
+        }
+    });
+});
+</script>
+
+</html>

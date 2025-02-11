@@ -1,0 +1,236 @@
+html {
+    font-size: 16px; /* 设置基础字体大小 */
+}
+.main-page{
+    height: 100%;
+    width: 100%;
+    background-color: rgb(43, 43, 43);
+    margin: 0;
+    padding: 0;
+}
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden; /* 防止滚动条出现 */
+}
+#partc {
+    height: 20vh; /* 示例高度 */ /* 示例背景色 */
+}
+#partup {
+    height: 80vh;
+}
+#parta{
+    height: 25vh; /* 示例高度 */ /* 示例背景色 */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.part-center {
+    display: flex;
+    justify-content: space-between;
+    height: 50vh; /* 示例高度 *//* 示例背景色 */
+}
+#partb-left, #partb-right {
+    width: 100px; /* 示例宽度 */ /* 示例背景色 */
+}
+#partb-center {
+    flex-grow: 1;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+#saiminn-logo {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px; /* 示例背景色 */
+}
+#saiminn-logo-onclick {
+    width: 100px;
+    height: 100px;
+    background-color: rgb(255, 255, 255); /* 示例背景色 */
+    border-radius: 10px;
+    /* 添加动画效果 */
+    animation: shrinkAnimation 1s forwards;
+}
+@keyframes shrinkAnimation {
+    from {
+        transform: scale(1); /* 初始大小 */
+    }
+    to {
+        transform: scale(0); /* 缩小到0 */
+    }
+}
+#menus2{
+    height: 33.33%;
+    display: flex;
+    justify-content: center;
+    align-items: center
+}
+
+#menu{
+    height: 61.8%;
+    width: 28.71vh;
+    display: inline-flex;
+    border-radius: 25px;
+    justify-content: center;
+    background-color: rgb(211, 211, 211);
+    animation: menu-onclick 1s forwards;
+}
+@keyframes menu-onclick {
+    from {
+        transform: scale(0); /* 初始大小 */
+    }
+    to {
+        transform: scale(1); /* 缩小到0 */
+    }
+}
+.botton{
+    height: 100%;
+    width: 25%;
+    border-radius: 25px;
+    justify-content: center;
+    align-items: center;
+    display: inline-flex;
+
+}
+#cuimianpukepai {
+    height: 45vh;
+    width:27.81vh;
+    background-color: rgb(109, 109, 109);
+    border-radius:10px;
+    padding: 8px;
+    animation: cuimianpukepai-onclick 1s forwards;
+
+}
+@keyframes cuimianpukepai-onclick {
+    from {
+        transform: scale(0); /* 初始大小 */
+    }
+    to {
+        transform: scale(1); /* 缩小到0 */
+    }
+}
+#cuimianpukepaionceclick {
+    height: 45vh;
+    width:27.81vh;
+    background-color: rgb(109, 109, 109);
+    border-radius:10px;
+    padding: 8px;
+}
+
+/* 设置菜单容器的样式 */
+.menu-container {
+    height: 92%; /* 固定高度 */
+    overflow-y: auto; /* 允许垂直滚动 */
+    border: 1px solid #ccc;
+    background-color: #f9f9f9;
+    padding: 10px;
+    width: 92%; /* 菜单宽度 */
+  }
+  
+  /* 设置菜单项的样式 */
+  .menu {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+  }
+  
+  .menu li {
+    margin-bottom: 10px; /* 菜单项之间的间距 */
+  }
+  
+  .menu li a {
+    text-decoration: none;
+    color: #333;
+    font-size: 16px;
+    padding: 10px;
+    display: block;
+    transition: background-color 0.3s ease; /* 添加过渡效果 */
+  }
+  
+  .menu li a:hover {
+    background-color: #ddd; /* 鼠标悬停时的背景色 */
+    border-radius: 5px;
+  }
+#parta-kuan {
+    height: 100%;
+    width: 100vh;
+    background-color: rgb(109, 109, 109);
+    margin-top: 10px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.floating-window {
+    display: none; /* 默认隐藏 */
+    position: fixed; /* 固定定位 */
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); /* 居中 */
+    width: 300px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    z-index: 1000; /* 确保悬浮窗在最上层 */
+}
+
+/* 悬浮窗内容 */
+.floating-content {
+    text-align: center;
+}
+
+/* 关闭按钮 */
+#closeButton {
+    margin-top: 10px;
+    padding: 5px 10px;
+    background-color: #ff4444;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+#closeButton:hover {
+    background-color: #cc0000;
+}
+#saiminngnk {
+    height:90%;
+    width: 27.81vh;
+    background-color:rgb(176,176,176);
+    border-radius:10px;
+    padding:10px;
+   
+}
+.switch {
+    height:7.3vh;
+    width:100%;
+}
+.anniuk1{
+    height:80%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.wzikuan{
+    height:20%;
+    width: 100%;
+    font-size:0.7em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+.anniu1{
+    height:100%;
+    width: 66%;
+    background-color:rgba(255, 255, 255, 0.9)
+}

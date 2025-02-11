@@ -1,0 +1,61 @@
+.toubu {
+	height: 1vh;
+	margin: 0px;
+	padding: 0px;
+}
+.header {
+	margin: 0px;
+	height: 6vh;
+	padding: 0px;
+	display: flex; /* 启用Flexbox布局 */
+	justify-content: center;
+}
+
+.logo {
+	height: 100%;
+	display: block;
+	width: 90%;
+
+}
+.logologo{
+	background-color: #8275f8;
+	height: 6vh;
+	display: block;
+	width: 6vh;
+
+}
+.logologo1{
+	height: 6vh;
+	display: block;
+	width: 30vh;
+	margin-left: 8vh;
+
+}
+.logotextmy {
+	height: 15%;
+}
+.logotext {
+	height: 70%;
+}
+.logotexttext {
+	height: 100%;
+	font-size: 2.5vh;
+}
+.gongnen {
+	height: 23vh;
+	
+margin-left: 5vw;
+}
+.gongnen2{
+	height: 10vh;
+	
+}
+.kuan {
+	background-color:rgb(64, 70, 68);
+	height: 90%;
+	border-radius: 8px;
+}
+.caidan {
+	background-color: blue;
+	height: 20vh;
+}

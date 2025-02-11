@@ -1,0 +1,147 @@
+.toubu {
+	height: 1vh;
+	margin: 0px;
+	padding: 0px;
+}
+.header {
+	margin: 0px;
+	height: 6vh;
+	padding: 0px;
+	display: flex; /* 启用Flexbox布局 */
+	justify-content: center;
+}
+
+.logo {
+	height: 100%;
+	display: flex;
+	width: 86%;
+}
+.logologo{
+	height: 6vh;
+	display: flex;
+	width: 6vh;
+
+}
+.logologo1{
+	height: 6vh;
+	display: block;
+	width: 30vh;
+	margin-left: 3vh;
+}
+.logotextmy {
+	height: 15%;
+}
+.logotext {
+	height: 70%;
+}
+.logotexttext {
+	height: 100%;
+	font-size: 2.5vh;
+}
+.gongnen {
+	height: 34vh;
+	margin-right: 4vw;
+	
+margin-left: 4vw;
+}
+.gongnen2{
+	height: 10vh;
+	
+}
+.kuan {
+	border:1.5px solid #dbdbdb;
+	height: 90%;
+	border-radius: 8px;
+	box-shadow: 2px 2px 2px 0px rgba(0,0,0,0.3);
+	display: flex;
+	align-items: center;
+
+
+}
+.kuan:hover {
+	background-color: rgb(130, 130, 130,0.4);
+
+}
+.kuan:active {
+	background-color: rgb(130, 130, 130,0.4);
+
+}
+#yunxin {
+	background-color: rgb(130, 130, 130,0.4);
+}
+#yunxin2 {
+	background-color: #00155061;
+}
+.caidan {
+	height: 37vh;
+	margin-left: 7vw;
+	margin-right: 7vw;
+}
+.xiaocaidan {
+	height: 8vh;
+	display: flex;
+
+}
+.xiaocaidan:hover {
+	background-color: rgb(130, 130, 130,0.4);
+
+}
+.logo3 {
+	height: 8vh;
+	width: 18vw;
+    display: flex;
+	align-items: center;
+}
+
+.logo4 {
+	height: 8vh;
+	width: 75vw;
+    display: flex;
+	align-items: center;
+}
+.logo4text {
+    height: 40%;
+	width: 100%;
+	font-size: 2vh;
+}
+.logok {
+	height: 64%;
+	width: 100%;
+	display: flex;
+
+
+}
+.logo12 {
+	height: 5.76vh;
+	width: 5.76vh;
+	
+}
+.logo12z {
+	height: 5.76vh;
+	width: 3vw;
+}
+.textk {
+	height: 100%;
+	width: 50vw;
+	
+}
+.textk1 {
+	height: 50%;
+	width: 100%;
+	font-size: 1.5em;
+	padding-left: 20px;
+
+}
+.textk2 {
+	height: 50%;
+	width: 100%;
+	font-size: 1em;
+	padding-left: 20px;
+	padding-top: 2%;
+
+}
+
+
+
+
+
